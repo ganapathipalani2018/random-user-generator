@@ -1,25 +1,56 @@
 body {
-    padding: 0;
-    margin: 0;
-    font-family: Tahoma, Geneva, sans-serif;
-  }
-  .jumbotron {
-    background: #444;
-    padding: 10px;
-    text-align: center;
-    color: #fff;
-  }
-  .radio {
-    display: inline-block;
-    padding: 20px 5px;
-  }
-  .form-group {
-    padding: 15px 15px 30px 15px;
-  }
-  .form-group select {
-    padding: 5px 15px;
-  }
-  .user-data {
+  padding: 0;
+  margin: 0;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.user--data {
+  width: 100%;
+  background: #ccc;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.person {
+  width: 20%;
+  height: 100%;
+  background: #fff;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 20px;
+  text-align: center;
+}
+.person__img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.person__fullname {
+  padding: 20px 0;
+  height: 65px;
+}
+.person__fullname span {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.person--btn {
+  width: 100%;
+  vertical-align: baseline;
+}
+.person--btn button {
+  width: 100%;
+  background: #ffa500;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+
+@media (min-width: 43.75em) and (max-width: 63.94em) {
+  .user--data {
     width: 100%;
     background: #ccc;
     display: flex;
@@ -27,9 +58,8 @@ body {
     flex-wrap: wrap;
     height: 100%;
   }
-  
   .person {
-    width: 20%;
+    width: 27%;
     height: 100%;
     background: #fff;
     border-radius: 5px;
@@ -37,98 +67,40 @@ body {
     padding: 20px;
     text-align: center;
   }
-  .person img {
+}
+@media (min-width: 28em) and (max-width: 43.7em) {
+  .user--data {
     width: 100%;
-    border-radius: 50%;
-  }
-  .fullname {
-    padding: 20px 0;
-    height: 65px;
-  }
-  .fullname span {
-    font-size: 24px;
-    font-weight: 700;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-  }
-  .btn-style {
-    width: 100%;
-    vertical-align: baseline;
-  }
-  .btn-style .btn {
-    width: 100%;
-    background: #ffa500;
-    border: none;
-    padding: 10px;
-    color: #fff;
-    font-size: 18px;
-  }
-  .loadmore-btn {
-    margin: 20px;
+    background: #ccc;
     display: flex;
-    align-items: flex-end;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
   }
-  .load-btn {
-    padding: 10px 30px;
-    background: #0c0c84;
-    display: block;
-    border: none;
-    color: #fff;
-    font-size: 18px;
+  .person {
+    width: 40%;
+    height: 100%;
+    background: #fff;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
   }
-  
-  @media (min-width: 700px) and (max-width: 1023px) {
-    .user-data {
-      width: 100%;
-      background: #ccc;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      height: 100%;
-    }
-    .person {
-      width: 27%;
-      height: 100%;
-      background: #fff;
-      border-radius: 5px;
-      margin: 10px 0;
-      padding: 20px;
-      text-align: center;
-    }
+}
+@media (min-width: 20em) and (max-width: 27.5em) {
+  .user--data {
+    width: 100%;
+    background: #ccc;
+    height: 100%;
+    float: left;
   }
-  @media (min-width: 450px) and (max-width: 699px) {
-    .user-data {
-      width: 100%;
-      background: #ccc;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      height: 100%;
-    }
-    .person {
-      width: 40%;
-      height: 100%;
-      background: #fff;
-      border-radius: 5px;
-      margin: 10px 0;
-      padding: 20px;
-      text-align: center;
-    }
+  .person {
+    width: 80%;
+    height: 100%;
+    background: #fff;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
   }
-  @media (min-width: 320px) and (max-width: 449px) {
-    .user-data {
-      width: 100%;
-      background: #ccc;
-      height: 100%;
-      float: left;
-    }
-    .person {
-      width: 80%;
-      height: 100%;
-      background: #fff;
-      border-radius: 5px;
-      margin: 20px;
-      padding: 20px;
-      text-align: center;
-    }
-  }
-  
+}
